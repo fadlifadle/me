@@ -48,7 +48,7 @@ echo "Membuat skrip untuk menjalankan miner..."
 cat > /usr/local/bin/start-iniminer.sh <<EOL
 #!/bin/bash
 cd /usr/local/bin
-./iniminer-linux-x64 --pool stratum+tcp://$WALLET_ADDRESS.$WORKER_NAME@pool-a.yatespool.com:31588
+./iniminer-linux-x64 --pool stratum+tcp://$WALLET_ADDRESS.$WORKER_NAME@pool-a.yatespool.com:31588 --cpu-devices 1 --cpu-devices 2 --cpu-devices 3
 
 # Memberikan izin eksekusi pada skrip
 chmod +x /usr/local/bin/start-iniminer.sh
